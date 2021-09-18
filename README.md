@@ -1,2 +1,2 @@
 # resume
-my resume - template was stolen from gawd knows where
+my resume - template was stolen from Sourabh Bajaj
