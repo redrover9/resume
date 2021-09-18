@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+%\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://gracethompson.ca/}{\Large Grace Thompson (RHCSA)}} & Email : \href{mailto:grace@gracethompson.ca}{grace@gracethompson.ca}\\
+  \href{https://gracethompson.ca/}{https://www.gracethompson.ca} & Mobile : +1-604-999-2505 \\
+\end{tabular*}
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {SUSE}{North Vancouver, BC}
+    {DevOps Engineer}{Sep. 2021 - Present}
+    \resumeItemListStart
+    \resumeItem{Observability}{Worked alongside other engineers and architects to improve observability and monitoring.}
+    \resumeItem{Cloud}{Built out systems that automate infrastructure changes in a cloud environment.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Global Relay}{Vancouver, BC}
+      {Linux Systems Administrator}{Sep. 2020 - Aug. 2021}
+      \resumeItemListStart
+        \resumeItem{Ansible}
+          {Developed and maintained Ansible code to automate routine tasks in a centralized fashion via an AWX instance running in a Docker container.}
+        \resumeItem{Python}
+          {Wrote Python scripts to parse through thousands of lines of data pulled from Red Hat Satellite and Red Hat IDM.}
+        \resumeItem{Idempotency}
+            {Replaced shell scripts with idempotent and easily manageable programs as member of Linux Automation Team.}
+        \resumeItem{REST API}
+        {Made a web interface with Django backend for the CEO to visualise the patching of servers in real time, with data pulled from the NetBox REST API.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Insurance Corporation of British Columbia}{North Vancouver, BC}
+      {Technical Support Specialist (Contract)}{May 2020 - Sep. 2020}
+      \resumeItemListStart
+        \resumeItem{Automation}
+          {Created Python and PowerShell scripts to automate standard ICBC processes, such as performing server health checks or pulling information from
+vROps, ultimately resulting in a time savings of approximately one hour per morning.}
+
+
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Orbis Investments}{Burnaby, BC}
+      {Infrastructure Engineer}{Aug. 2019 - Mar. 2020}
+      \resumeItemListStart
+        \resumeItem{Troubleshooting}
+          {Used PowerShell to provide assurance that a critical email had not been sent to the incorrect customer.}
+
+      \resumeItemListEnd
+\resumeSubheading
+{British Columbia Institute of Technology}{Burnaby, BC}
+{Junior Systems Analyst}{Jun. 2017 - Aug. 2019}
+\resumeItemListStart
+\resumeItem{Documentation}
+{Co-ordinated the review of six hundred knowledge base articles, and worked with interns to update or re-write one hundred and sixty two of them.}
+\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Western Governors University}{Online}
+      {Bachelor of Science in Computer Science}{Apr. 2021 -- Apr. 2025}
+    \resumeSubheading
+      {British Columbia Institute of Technology}{Burnaby, British Columbia}
+      {Diploma in Computer Information Systems Administration }{Sep. 2016 -- Jun. 2018}
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Name Generator}
+      {Designed Go application to create fantasy names for writers and added Machine Learning with Python.}
+    \resumeSubItem{Space Invaders}
+      {Created Python version of the classic game Space Invaders.}
+    \resumeSubItem{Youth Learn to Code}
+      {Developed curricula and taught 3 separate classes to give young people in rural areas a chance to learn Python, Linux, and C\#.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Operating Systems}{: RHEL | CentOS | SLES | Windows Server}
+   }
+   \item{
+   \textbf{Software Development}{: Ansible | Puppet | Salt | Python | Go | Bash | PowerShell } 
+   }
+   \item{
+   \textbf{Platforms}{: VMware vSphere | Docker | Kubernetes}
+   }
+   \item{
+   \textbf{Networking}{: DNS | Routing | Switching | VLANs}
+   }
+   \item{
+   \textbf{Cloud}{: AWS | Azure | GCP }
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+
+\end{document}
